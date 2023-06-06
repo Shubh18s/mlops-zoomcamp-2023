@@ -1,0 +1,56 @@
+{
+    "os": "Linux-5.19.0-1025-gcp-x86_64-with-glibc2.35",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-04T01:43:57.209891",
+    "startedAt": "2023-06-04T01:43:56.968084",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/Shubh18s/mlops-zoomcamp-2023.git",
+        "commit": "6406969bbaed4768467d0f3a8da80ddf7c326c23"
+    },
+    "email": "singh18shubhdeep@gmail.com",
+    "root": "/home/singh/mlops-zoomcamp-2023",
+    "host": "mlops-zoomcamp",
+    "username": "singh",
+    "executable": "/home/singh/anaconda3/envs/wandb_env/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2800.236,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2800.236,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.236,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.236,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.236,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 28.89361572265625,
+        "used": 17.50640106201172
+    },
+    "memory": {
+        "total": 15.622859954833984
+    }
+}

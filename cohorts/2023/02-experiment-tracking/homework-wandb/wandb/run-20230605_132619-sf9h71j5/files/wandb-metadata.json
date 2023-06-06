@@ -1,0 +1,64 @@
+{
+    "os": "Linux-5.19.0-1025-gcp-x86_64-with-glibc2.35",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-05T13:26:19.573510",
+    "startedAt": "2023-06-05T13:26:19.325212",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "nyc_green_taxi_experiments",
+        "--wandb_entity",
+        "michael945angelo",
+        "--data_artifact",
+        "michael945angelo/nyc_green_taxi_experiments/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "/home/singh/mlops-zoomcamp-2023/02-experiment-tracking/homework-wandb/sweep.py",
+    "codePath": "02-experiment-tracking/homework-wandb/sweep.py",
+    "git": {
+        "remote": "https://github.com/Shubh18s/mlops-zoomcamp-2023.git",
+        "commit": "6406969bbaed4768467d0f3a8da80ddf7c326c23"
+    },
+    "email": "singh18shubhdeep@gmail.com",
+    "root": "/home/singh/mlops-zoomcamp-2023",
+    "host": "mlops-zoomcamp",
+    "username": "singh",
+    "executable": "/home/singh/anaconda3/envs/wandb_env/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2800.188,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2800.188,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.188,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.188,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2800.188,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 28.89361572265625,
+        "used": 17.55658721923828
+    },
+    "memory": {
+        "total": 15.622859954833984
+    }
+}

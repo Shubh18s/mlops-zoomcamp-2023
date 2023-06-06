@@ -1,0 +1,232 @@
+2023-06-04 01:39:29,225 INFO    StreamThr :3518 [internal.py:wandb_internal():86] W&B internal server running at pid: 3518, started at: 2023-06-04 01:39:29.224493
+2023-06-04 01:39:29,226 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status
+2023-06-04 01:39:29,227 INFO    WriterThread:3518 [datastore.py:open_for_write():85] open: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/run-74sne2lc.wandb
+2023-06-04 01:39:29,229 DEBUG   SenderThread:3518 [sender.py:send():375] send: header
+2023-06-04 01:39:29,232 DEBUG   SenderThread:3518 [sender.py:send():375] send: run
+2023-06-04 01:39:29,319 INFO    SenderThread:3518 [dir_watcher.py:__init__():219] watching files in: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files
+2023-06-04 01:39:29,320 INFO    SenderThread:3518 [sender.py:_start_run_threads():1124] run started: 74sne2lc with start time 1685842769.223912
+2023-06-04 01:39:29,320 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: summary_record
+2023-06-04 01:39:29,320 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-04 01:39:29,321 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: check_version
+2023-06-04 01:39:29,321 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: check_version
+2023-06-04 01:39:29,435 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: run_start
+2023-06-04 01:39:29,436 DEBUG   HandlerThread:3518 [system_info.py:__init__():31] System info init
+2023-06-04 01:39:29,436 DEBUG   HandlerThread:3518 [system_info.py:__init__():46] System info init done
+2023-06-04 01:39:29,436 INFO    HandlerThread:3518 [system_monitor.py:start():181] Starting system monitor
+2023-06-04 01:39:29,436 INFO    SystemMonitor:3518 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-04 01:39:29,437 INFO    HandlerThread:3518 [system_monitor.py:probe():201] Collecting system info
+2023-06-04 01:39:29,437 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started cpu monitoring
+2023-06-04 01:39:29,438 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started disk monitoring
+2023-06-04 01:39:29,439 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started memory monitoring
+2023-06-04 01:39:29,439 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started network monitoring
+2023-06-04 01:39:29,442 DEBUG   HandlerThread:3518 [system_info.py:probe():195] Probing system
+2023-06-04 01:39:29,444 DEBUG   HandlerThread:3518 [system_info.py:_probe_git():180] Probing git
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_info.py:_probe_git():188] Probing git done
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_info.py:probe():240] Probing system done
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-1025-gcp-x86_64-with-glibc2.35', 'python': '3.10.11', 'heartbeatAt': '2023-06-04T01:39:29.442325', 'startedAt': '2023-06-04T01:39:29.218667', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/Shubh18s/mlops-zoomcamp-2023.git', 'commit': '6406969bbaed4768467d0f3a8da80ddf7c326c23'}, 'email': 'singh18shubhdeep@gmail.com', 'root': '/home/singh/mlops-zoomcamp-2023', 'host': 'mlops-zoomcamp', 'username': 'singh', 'executable': '/home/singh/anaconda3/envs/wandb_env/bin/python', 'cpu_count': 2, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2800.236, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2800.236, 'min': 0.0, 'max': 0.0}, {'current': 2800.236, 'min': 0.0, 'max': 0.0}, {'current': 2800.236, 'min': 0.0, 'max': 0.0}, {'current': 2800.236, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 28.89361572265625, 'used': 17.50558853149414}, 'memory': {'total': 15.622859954833984}}
+2023-06-04 01:39:29,449 INFO    HandlerThread:3518 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-04 01:39:29,449 INFO    HandlerThread:3518 [system_monitor.py:probe():214] Publishing system info
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-04 01:39:29,449 DEBUG   HandlerThread:3518 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-04 01:39:30,321 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/requirements.txt
+2023-06-04 01:39:30,321 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-summary.json
+2023-06-04 01:39:30,322 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/conda-environment.yaml
+2023-06-04 01:39:31,132 DEBUG   HandlerThread:3518 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-04 01:39:31,133 INFO    HandlerThread:3518 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-04 01:39:31,135 DEBUG   SenderThread:3518 [sender.py:send():375] send: files
+2023-06-04 01:39:31,135 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-04 01:39:31,148 DEBUG   SenderThread:3518 [sender.py:send():375] send: telemetry
+2023-06-04 01:39:31,149 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-04 01:39:31,150 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: stop_status
+2023-06-04 01:39:31,281 DEBUG   SenderThread:3518 [sender.py:send():375] send: use_artifact
+2023-06-04 01:39:31,321 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/conda-environment.yaml
+2023-06-04 01:39:31,322 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-metadata.json
+2023-06-04 01:39:31,332 INFO    wandb-upload_0:3518 [upload_job.py:push():137] Uploaded file /tmp/tmp5mxdpo9twandb/4osz5g53-wandb-metadata.json
+2023-06-04 01:39:31,394 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: pause
+2023-06-04 01:39:31,394 INFO    HandlerThread:3518 [handler.py:handle_request_pause():716] stopping system metrics thread or process
+2023-06-04 01:39:31,394 INFO    HandlerThread:3518 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-04 01:39:31,394 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-04 01:39:31,394 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-04 01:39:31,395 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-04 01:39:31,395 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-04 01:39:31,395 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined disk monitor
+2023-06-04 01:39:31,395 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined memory monitor
+2023-06-04 01:39:31,395 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined network monitor
+2023-06-04 01:39:31,396 DEBUG   SenderThread:3518 [sender.py:send():375] send: stats
+2023-06-04 01:39:32,322 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/output.log
+2023-06-04 01:39:34,323 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/output.log
+2023-06-04 01:39:34,396 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:39:39,397 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:39:44,398 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:39:46,148 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-04 01:39:46,149 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: stop_status
+2023-06-04 01:39:50,177 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:39:55,178 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:40:00,183 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:40:00,331 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/config.yaml
+2023-06-04 01:40:01,148 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-04 01:40:01,148 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: stop_status
+2023-06-04 01:40:06,177 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:40:07,621 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: resume
+2023-06-04 01:40:07,621 INFO    HandlerThread:3518 [handler.py:handle_request_resume():707] starting system metrics thread or process
+2023-06-04 01:40:07,621 INFO    HandlerThread:3518 [system_monitor.py:start():181] Starting system monitor
+2023-06-04 01:40:07,622 INFO    SystemMonitor:3518 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-04 01:40:07,622 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started cpu monitoring
+2023-06-04 01:40:07,622 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started disk monitoring
+2023-06-04 01:40:07,623 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started memory monitoring
+2023-06-04 01:40:07,623 INFO    SystemMonitor:3518 [interfaces.py:start():190] Started network monitoring
+2023-06-04 01:40:07,899 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-04 01:40:07,900 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: log_artifact
+2023-06-04 01:40:08,068 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-04 01:40:08,094 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-04 01:40:08,334 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json
+2023-06-04 01:40:08,334 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json
+2023-06-04 01:40:08,335 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media/table
+2023-06-04 01:40:08,335 INFO    wandb-upload_0:3518 [upload_job.py:push():95] Uploaded file /home/singh/.local/share/wandb/artifacts/staging/tmptw1a5ml9
+2023-06-04 01:40:08,335 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_created():278] file/dir created: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media
+2023-06-04 01:40:08,775 INFO    SenderThread:3518 [sender.py:send_request_log_artifact():1438] logged artifact run-74sne2lc-TrainValTable - {'id': 'QXJ0aWZhY3Q6NDc2NzQ3OTIy', 'digest': '57870a13cce91b03a598ac4608b982cb', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc0MDc2OTY4', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-04 01:40:08,775 DEBUG   SenderThread:3518 [sender.py:send():375] send: files
+2023-06-04 01:40:08,775 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json with policy now
+2023-06-04 01:40:08,776 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: log_artifact
+2023-06-04 01:40:08,977 INFO    wandb-upload_0:3518 [upload_job.py:push():137] Uploaded file /tmp/tmp5mxdpo9twandb/zzc7630a-media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json
+2023-06-04 01:40:08,989 INFO    wandb-upload_1:3518 [upload_job.py:push():137] Uploaded file /tmp/tmp5mxdpo9twandb/81kzb70f-media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json
+2023-06-04 01:40:09,097 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-04 01:40:09,275 INFO    wandb-upload_0:3518 [upload_job.py:push():95] Uploaded file /home/singh/.local/share/wandb/artifacts/staging/tmp_8f_2hiy
+2023-06-04 01:40:09,278 INFO    wandb-upload_1:3518 [upload_job.py:push():137] Uploaded file /tmp/tmp5mxdpo9twandb/sjxqw8d7-media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json
+2023-06-04 01:40:09,616 INFO    SenderThread:3518 [sender.py:send_request_log_artifact():1438] logged artifact run-74sne2lc-TestTable - {'id': 'QXJ0aWZhY3Q6NDc2NzQ3OTMw', 'digest': 'af9b2360d0478378df284e969f8116c2', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc0MDc2OTcy', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-04 01:40:09,616 DEBUG   SenderThread:3518 [sender.py:send():375] send: files
+2023-06-04 01:40:09,616 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json with policy now
+2023-06-04 01:40:09,617 DEBUG   SenderThread:3518 [sender.py:send():375] send: history
+2023-06-04 01:40:09,617 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: summary_record
+2023-06-04 01:40:09,618 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-04 01:40:09,619 DEBUG   SenderThread:3518 [sender.py:send():375] send: telemetry
+2023-06-04 01:40:09,619 DEBUG   SenderThread:3518 [sender.py:send():375] send: exit
+2023-06-04 01:40:09,619 INFO    SenderThread:3518 [sender.py:send_exit():598] handling exit code: 0
+2023-06-04 01:40:09,619 INFO    SenderThread:3518 [sender.py:send_exit():600] handling runtime: 2
+2023-06-04 01:40:09,619 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-04 01:40:09,619 INFO    SenderThread:3518 [sender.py:send_exit():606] send defer
+2023-06-04 01:40:09,620 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: poll_exit
+2023-06-04 01:40:09,620 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,620 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-04 01:40:09,620 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,620 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-04 01:40:09,620 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 1
+2023-06-04 01:40:09,621 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,621 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-04 01:40:09,621 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,621 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-04 01:40:09,621 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 2
+2023-06-04 01:40:09,623 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,623 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-04 01:40:09,623 INFO    HandlerThread:3518 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-04 01:40:09,624 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-04 01:40:09,624 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-04 01:40:09,624 DEBUG   SystemMonitor:3518 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-04 01:40:09,624 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-04 01:40:09,624 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined disk monitor
+2023-06-04 01:40:09,624 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined memory monitor
+2023-06-04 01:40:09,624 INFO    HandlerThread:3518 [interfaces.py:finish():202] Joined network monitor
+2023-06-04 01:40:09,625 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,625 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-04 01:40:09,625 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 3
+2023-06-04 01:40:09,625 DEBUG   SenderThread:3518 [sender.py:send():375] send: stats
+2023-06-04 01:40:09,625 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,625 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-04 01:40:09,625 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,625 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-04 01:40:09,625 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 4
+2023-06-04 01:40:09,626 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,626 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-04 01:40:09,626 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,626 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-04 01:40:09,626 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 5
+2023-06-04 01:40:09,626 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,626 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-04 01:40:09,626 DEBUG   SenderThread:3518 [sender.py:send():375] send: summary
+2023-06-04 01:40:09,627 INFO    SenderThread:3518 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-04 01:40:09,627 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,627 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-04 01:40:09,627 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 6
+2023-06-04 01:40:09,627 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,627 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-04 01:40:09,627 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,627 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-04 01:40:09,631 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: status_report
+2023-06-04 01:40:09,667 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 7
+2023-06-04 01:40:09,668 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:09,668 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-04 01:40:09,668 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:09,668 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-04 01:40:09,807 INFO    wandb-upload_0:3518 [upload_job.py:push():137] Uploaded file /tmp/tmp5mxdpo9twandb/itrgqw8w-media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json
+2023-06-04 01:40:10,098 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-04 01:40:10,335 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-summary.json
+2023-06-04 01:40:10,335 INFO    Thread-12 :3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/config.yaml
+2023-06-04 01:40:11,431 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 8
+2023-06-04 01:40:11,431 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: poll_exit
+2023-06-04 01:40:11,431 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:11,432 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-04 01:40:11,432 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:11,432 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-04 01:40:11,432 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 9
+2023-06-04 01:40:11,432 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:11,432 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-04 01:40:11,433 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:11,433 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-04 01:40:11,433 INFO    SenderThread:3518 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-04 01:40:12,336 INFO    SenderThread:3518 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/output.log
+2023-06-04 01:40:12,336 INFO    SenderThread:3518 [dir_watcher.py:finish():395] scan: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files
+2023-06-04 01:40:12,336 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/requirements.txt requirements.txt
+2023-06-04 01:40:12,336 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/output.log output.log
+2023-06-04 01:40:12,336 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-summary.json wandb-summary.json
+2023-06-04 01:40:12,338 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/config.yaml config.yaml
+2023-06-04 01:40:12,339 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-metadata.json wandb-metadata.json
+2023-06-04 01:40:12,339 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/conda-environment.yaml conda-environment.yaml
+2023-06-04 01:40:12,347 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json media/table/Train-Val-Table_0_2a92d093582bdd39a11a.table.json
+2023-06-04 01:40:12,347 INFO    SenderThread:3518 [dir_watcher.py:finish():409] scan save: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json media/table/Test-Table_0_3272deb5d5a2f6825a1d.table.json
+2023-06-04 01:40:12,347 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 10
+2023-06-04 01:40:12,348 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:12,348 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-04 01:40:12,348 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:12,348 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-04 01:40:12,348 INFO    SenderThread:3518 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-04 01:40:12,522 INFO    wandb-upload_1:3518 [upload_job.py:push():137] Uploaded file /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/requirements.txt
+2023-06-04 01:40:12,540 INFO    wandb-upload_2:3518 [upload_job.py:push():137] Uploaded file /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/output.log
+2023-06-04 01:40:12,553 INFO    wandb-upload_0:3518 [upload_job.py:push():137] Uploaded file /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/wandb-summary.json
+2023-06-04 01:40:12,571 INFO    wandb-upload_3:3518 [upload_job.py:push():137] Uploaded file /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/config.yaml
+2023-06-04 01:40:12,618 INFO    wandb-upload_4:3518 [upload_job.py:push():137] Uploaded file /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/files/conda-environment.yaml
+2023-06-04 01:40:12,819 INFO    Thread-11 (_thread_body):3518 [sender.py:transition_state():626] send defer: 11
+2023-06-04 01:40:12,819 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:12,819 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-04 01:40:12,820 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:12,820 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-04 01:40:12,820 INFO    SenderThread:3518 [file_pusher.py:join():172] waiting for file pusher
+2023-06-04 01:40:12,820 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 12
+2023-06-04 01:40:12,820 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:12,820 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-04 01:40:12,820 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:12,820 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-04 01:40:12,869 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 13
+2023-06-04 01:40:12,869 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:12,869 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-04 01:40:12,869 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:12,870 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-04 01:40:12,870 INFO    SenderThread:3518 [sender.py:transition_state():626] send defer: 14
+2023-06-04 01:40:12,870 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: defer
+2023-06-04 01:40:12,870 INFO    HandlerThread:3518 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-04 01:40:12,870 DEBUG   SenderThread:3518 [sender.py:send():375] send: final
+2023-06-04 01:40:12,870 DEBUG   SenderThread:3518 [sender.py:send():375] send: footer
+2023-06-04 01:40:12,870 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: defer
+2023-06-04 01:40:12,870 INFO    SenderThread:3518 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-04 01:40:12,871 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-04 01:40:12,871 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: server_info
+2023-06-04 01:40:12,872 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: poll_exit
+2023-06-04 01:40:12,872 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-04 01:40:12,872 DEBUG   SenderThread:3518 [sender.py:send_request():402] send_request: server_info
+2023-06-04 01:40:12,872 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-04 01:40:12,915 DEBUG   HandlerThread:3518 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-04 01:40:12,915 INFO    HandlerThread:3518 [handler.py:finish():842] shutting down handler
+2023-06-04 01:40:13,872 INFO    WriterThread:3518 [datastore.py:close():298] close: /home/singh/mlops-zoomcamp-2023/02-experiment-tracking/WandbTraining/wandb/run-20230604_013929-74sne2lc/run-74sne2lc.wandb
+2023-06-04 01:40:13,888 INFO    SenderThread:3518 [sender.py:finish():1550] shutting down sender
+2023-06-04 01:40:13,888 INFO    SenderThread:3518 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-04 01:40:13,888 INFO    SenderThread:3518 [file_pusher.py:join():172] waiting for file pusher
