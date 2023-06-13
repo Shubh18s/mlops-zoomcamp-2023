@@ -11,3 +11,7 @@ deployments:
   entrypoint: cohorts/2023/03-orchestration/homework/orchestrate_hw.py:main_flow_hw
   work_pool:
     name: zoompool
+- name: taxi_gcs_2023_data_hw2
+  entrypoint: cohorts/2023/03-orchestration/homework/orchestrate_hw2.py:main_flow_hw2
+  work_pool:
+    name: zoompool
