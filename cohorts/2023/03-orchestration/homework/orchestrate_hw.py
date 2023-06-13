@@ -141,10 +141,11 @@ def main_flow_hw(
     mlflow.set_experiment("nyc-taxi-experiment")
 
     # Load
-    # df_train = read_data(train_path)
-    # df_val = read_data(val_path)
     gcs_bucket_block = GcsBucket.load("mlops-zoomcamp-bucket-2023ss")
     gcs_bucket_block.download_folder_to_path(from_folder="data", to_folder="data")
+
+    df_train = read_data(train_path)
+    df_val = read_data(val_path)
 
     # Transform
     X_train, X_val, y_train, y_val, dv = add_features(df_train, df_val)
