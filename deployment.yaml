@@ -1,0 +1,9 @@
+deployments:
+- name: taxi_local_data
+  entrypoint: cohorts/2023/03-orchestration/3.4/orchestrate.py:main_flow
+  work_pool:
+    name: zoompool
+- name: taxi_gcs_data
+  entrypoint: cohorts/2023/03-orchestration/3.5/orchestrate_gcs.py:main_flow_gcs
+  work_pool:
+    name: zoompool
