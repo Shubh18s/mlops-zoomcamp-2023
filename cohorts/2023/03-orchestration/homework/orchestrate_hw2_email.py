@@ -137,23 +137,28 @@ def main_flow_hw2_email(
     val_path: str = "./data/green_tripdata_2023-03.parquet",
 ) -> None:
     """The main training pipeline"""
+    try:
+        # MLflow settings
+        mlflow.set_tracking_uri("sqlite:///mlflow.db")
+        mlflow.set_experiment("nyc-taxi-experiment")
 
-    # MLflow settings
-    mlflow.set_tracking_uri("sqlite:///mlflow.db")
-    mlflow.set_experiment("nyc-taxi-experiment")
+        # Load
+        gcs_bucket_block = GcsBucket.load("mlops-zoomcamp-bucket-2023ss")
+        gcs_bucket_block.download_folder_to_path(from_folder="data", to_folder="data")
+    
+        df_train = read_data(train_path)
+        df_val = read_data(val_path)
+    
 
-    # Load
-    gcs_bucket_block = GcsBucket.load("mlops-zoomcamp-bucket-2023ss")
-    gcs_bucket_block.download_folder_to_path(from_folder="data", to_folder="data")
+        # Transform
+        X_train, X_val, y_train, y_val, dv = add_features(df_train, df_val)
 
-    df_train = read_data(train_path)
-    df_val = read_data(val_path)
+        # Train
+        train_best_model(X_train, X_val, y_train, y_val, dv)
 
-    # Transform
-    X_train, X_val, y_train, y_val, dv = add_features(df_train, df_val)
-
-    # Train
-    train_best_model(X_train, X_val, y_train, y_val, dv)
+    except Exception as exc:
+        notify_exc_by_email(exc)
+        raise
 
 
 def notify_exc_by_email(exc):
@@ -168,8 +173,4 @@ def notify_exc_by_email(exc):
     )
 
 if __name__ == "__main__":
-    try:
-        main_flow_hw2_email()
-    except Exception as exc:
-        notify_exc_by_email(exc)
-        raise
+    main_flow_hw2_email()
