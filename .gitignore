@@ -3,7 +3,7 @@
 .bin
 *.db
 
-# *.parquet
+*.parquet
 *.html
 *.csv
 
@@ -12,6 +12,10 @@ venv
 .idea
 **/artifacts/
 **/models/
+
+**/mlruns/
+Pipfile.lock
+*.bin
 
 __pycache__/
 **.env
