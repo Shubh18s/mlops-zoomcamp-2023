@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-prefect = "*"
+prefect = ">=2.0b6"
 mlflow = "*"
 scikit-learn = "==1.2.1"
 pandas = "*"
