@@ -2,20 +2,20 @@ deployments:
 - name: taxi_local_data
   entrypoint: cohorts/2023/03-orchestration/3.4/orchestrate.py:main_flow
   work_pool:
-    name: zoompool
+    name: zoom-pool
 - name: taxi_gcs_data
   entrypoint: cohorts/2023/03-orchestration/3.5/orchestrate_gcs.py:main_flow_gcs
   work_pool:
-    name: zoompool
+    name: zoom-pool
 - name: taxi_gcs_2023_data_hw
   entrypoint: cohorts/2023/03-orchestration/homework/orchestrate_hw.py:main_flow_hw
   work_pool:
-    name: zoompool
+    name: zoom-pool
 - name: taxi_gcs_2023_data_hw2
   entrypoint: cohorts/2023/03-orchestration/homework/orchestrate_hw2.py:main_flow_hw2
   work_pool:
-    name: zoompool
+    name: zoom-pool
 - name: taxi_gcs_2023_data_hw2_email
   entrypoint: cohorts/2023/03-orchestration/homework/orchestrate_hw2_email.py:main_flow_hw2_email
   work_pool:
-    name: zoompool
+    name: zoom-pool

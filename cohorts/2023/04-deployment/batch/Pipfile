@@ -6,8 +6,9 @@ name = "pypi"
 [packages]
 prefect = ">=2.0b6"
 mlflow = "*"
-scikit-learn = "==1.2.1"
+scikit-learn = "==1.2.2"
 pandas = "*"
+gcsfs = "*"
 
 [dev-packages]
 

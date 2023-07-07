@@ -91,7 +91,7 @@ def ride_duration_prediction(
     month = prev_month.month
 
     input_file = f'https://d37ci6vzurychx.cloudfront.net/trip-data/{taxi_type}_tripdata_{year:04d}-{month:02d}.parquet'
-    output_file = f'output/{taxi_type}/{year:04d}-{month:02d}.parquet'
+    output_file = f'gs://taxi-data-mlflow-artifacts/deployment-scoring-artifacts/output/taxi_type={taxi_type}/year={year:04d}-month={month:02d}/{run_id}.parquet'
 
     apply_model(
         input_file = input_file,
