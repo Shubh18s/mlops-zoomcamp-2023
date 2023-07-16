@@ -79,7 +79,7 @@ def main(year: int, month: int):
     X_val = dv.transform(dicts)
     y_pred = lr.predict(X_val)
 
-    print('predicted sum duration:', y_pred.mean())
+    print('predicted sum duration:', y_pred.sum())
 
     df_result = pd.DataFrame()
     df_result['ride_id'] = df['ride_id']
@@ -88,14 +88,6 @@ def main(year: int, month: int):
     print(f'Saving Results to {output_file} ')
     save_data(output_file, df_result)
 
-    # options = {
-    #     'client_kwargs': {
-    #         'endpoint_url': "http://localhost:4566" #S3_ENDPOINT_URL
-    #     }
-    # }
-    # df = pd.read_parquet("s3://nyc-duration/in/2022-01.parquet", storage_options=options)
-
-    # print(df['predicted_duration'].sum())
 
 if __name__ == '__main__':
     main(year = int(sys.argv[1]), month = int(sys.argv[2]))
